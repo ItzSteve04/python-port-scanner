@@ -1,0 +1,7 @@
+include LICENSE README.md RESPONSIBLE_USE.md CHANGELOG.md .gitignore
+recursive-include docs *.md *.png
+recursive-include examples *.json *.csv *.txt *.md
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include .github *.yml
+global-exclude *.py[cod]

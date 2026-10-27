@@ -1,0 +1,47 @@
+$ port-scanner --help
+
+usage: port-scanner [-h] [-p PORTS] [-t TIMEOUT] [-w WORKERS] [--rate RATE]
+                    [--family {auto,ipv4,ipv6}] [--banner]
+                    [--banner-timeout BANNER_TIMEOUT]
+                    [--banner-bytes BANNER_BYTES] [--authorized] [--json PATH]
+                    [--csv PATH] [--show-all] [--no-progress] [-v] [--version]
+                    target
+
+Python Port Scanner: rate-limited TCP connect scans for authorized testing.
+
+positional arguments:
+  target                One IP address or hostname; no URL or CIDR.
+
+options:
+  -h, --help            show this help message and exit
+  -p PORTS, --ports PORTS
+                        Comma-separated ports/ranges; omitted = 33 common
+                        ports. (default: None)
+  -t TIMEOUT, --timeout TIMEOUT
+                        Connect timeout in seconds (0.05-10). (default: 1.0)
+  -w WORKERS, --workers WORKERS
+                        Maximum concurrent workers (1-128). (default: 32)
+  --rate RATE           Global connection permits per second (1-200), without
+                        token bursts. (default: 50.0)
+  --family {auto,ipv4,ipv6}
+                        Address family; auto prefers IPv4 and scans one
+                        resolved address. (default: auto)
+  --banner              Receive a passive banner; sends no data. (default:
+                        False)
+  --banner-timeout BANNER_TIMEOUT
+                        Banner receive timeout in seconds (0.05-5). (default:
+                        0.5)
+  --banner-bytes BANNER_BYTES
+                        Maximum bytes in one banner read (1-4096). (default:
+                        1024)
+  --authorized          Assert that you own or have explicit permission to
+                        scan the target. (default: False)
+  --json PATH           Export JSON. (default: None)
+  --csv PATH            Export CSV. (default: None)
+  --show-all            Show all observed states in the table. (default:
+                        False)
+  --no-progress         Disable progress output on stderr. (default: False)
+  -v, --verbose         Enable diagnostic logging. (default: False)
+  --version             show program's version number and exit
+
+Only scan systems you own or have explicit permission to test.

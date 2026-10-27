@@ -1,0 +1,18 @@
+{
+  "version": "2026.10",
+  "reviewed_on": "2026-10-24",
+  "reference": "https://www.iana.org/assignments/service-names-port-numbers/",
+  "notes": "Curated conventional hints, not a full IANA registry or protocol verification. Aliases for common deployments are documented in docs/SERVICE_MAPPING.md.",
+  "tcp": {
+    "20": "ftp-data", "21": "ftp", "22": "ssh", "23": "telnet", "25": "smtp",
+    "53": "domain", "80": "http", "110": "pop3", "111": "sunrpc",
+    "135": "msrpc", "139": "netbios-ssn", "143": "imap", "389": "ldap",
+    "443": "https", "445": "microsoft-ds", "465": "submissions", "587": "submission",
+    "636": "ldaps", "993": "imaps", "995": "pop3s", "1433": "ms-sql-s",
+    "1521": "oracle-tns", "2049": "nfs", "2375": "docker-api", "2376": "docker-api-tls",
+    "3306": "mysql", "3389": "ms-wbt-server", "5432": "postgresql", "5900": "rfb",
+    "6379": "redis", "8000": "http-alt (common)", "8008": "http-alt",
+    "8080": "http-alt", "8443": "https-alt (common)", "9200": "elasticsearch (common)",
+    "27017": "mongodb"
+  }
+}

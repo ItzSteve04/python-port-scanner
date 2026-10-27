@@ -1,0 +1,63 @@
+# Python bytecode and packaging
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+build/
+dist/
+*.whl
+
+# Virtual environments (including .venv314)
+.venv*/
+venv/
+venv.bak/
+env/
+env.bak/
+ENV/
+__pypackages__/
+
+# Test, coverage, and development-tool output
+.coverage*
+htmlcov/
+coverage.xml
+/coverage.json
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.tox/
+.nox/
+.hypothesis/
+.dmypy.json
+dmypy.json
+
+# Keep real scan exports here; examples/ intentionally remains tracked.
+reports/
+# Common accidental exports to the project root
+/scan.json
+/scan.csv
+/local-report.json
+
+# Local logs, credentials, and project archives
+*.log
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.zip
+*.tar.gz
+
+# Editors / operating systems
+.idea/
+.vscode/
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.tmp
+*.bak
+*~

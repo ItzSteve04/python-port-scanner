@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "scanner_version": "1.0.1",
+  "target": {
+    "input": "127.0.0.1",
+    "address": "127.0.0.1",
+    "family": "ipv4",
+    "scope_id": 0,
+    "resolved_addresses": [
+      "127.0.0.1"
+    ]
+  },
+  "started_at": "2026-10-24T21:03:31.445802+00:00",
+  "finished_at": "2026-10-24T21:03:31.698074+00:00",
+  "duration_seconds": 0.252276,
+  "interrupted": false,
+  "configuration": {
+    "target": "127.0.0.1",
+    "ports": [
+      38813,
+      43219,
+      55377
+    ],
+    "timeout": 1.0,
+    "workers": 4,
+    "rate": 20.0,
+    "banner": true,
+    "banner_timeout": 0.15,
+    "banner_bytes": 1024,
+    "family": "auto",
+    "authorized": true
+  },
+  "summary": {
+    "requested": 3,
+    "completed": 3,
+    "unscanned": 0,
+    "open": 2,
+    "closed": 1,
+    "timed_out": 0,
+    "unreachable": 0,
+    "error": 0
+  },
+  "unscanned_ports": [],
+  "results": [
+    {
+      "port": 38813,
+      "state": "closed",
+      "service": "unknown",
+      "service_source": "unknown",
+      "connect_ms": 0.462,
+      "banner": null,
+      "error": "[errno 111] Connection refused"
+    },
+    {
+      "port": 43219,
+      "state": "open",
+      "service": "unknown",
+      "service_source": "unknown",
+      "connect_ms": 0.228,
+      "banner": {
+        "status": "received",
+        "text": "SSH-2.0-PythonPortScannerDemo\\x0d\\x0a",
+        "bytes_received": 31,
+        "at_limit": false
+      },
+      "error": null
+    },
+    {
+      "port": 55377,
+      "state": "open",
+      "service": "unknown",
+      "service_source": "unknown",
+      "connect_ms": 0.245,
+      "banner": {
+        "status": "timeout",
+        "text": "",
+        "bytes_received": 0,
+        "at_limit": false
+      },
+      "error": null
+    }
+  ]
+}

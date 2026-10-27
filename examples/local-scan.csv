@@ -1,0 +1,4 @@
+target,address,family,scope_id,started_at,finished_at,interrupted,requested,completed,unscanned,port,state,service,service_source,connect_ms,banner_status,banner,banner_bytes,banner_at_limit,error
+127.0.0.1,127.0.0.1,ipv4,0,2026-10-24T21:03:31.445802+00:00,2026-10-24T21:03:31.698074+00:00,False,3,3,0,38813,closed,unknown,unknown,0.462,disabled,,0,False,[errno 111] Connection refused
+127.0.0.1,127.0.0.1,ipv4,0,2026-10-24T21:03:31.445802+00:00,2026-10-24T21:03:31.698074+00:00,False,3,3,0,43219,open,unknown,unknown,0.228,received,SSH-2.0-PythonPortScannerDemo\x0d\x0a,31,False,
+127.0.0.1,127.0.0.1,ipv4,0,2026-10-24T21:03:31.445802+00:00,2026-10-24T21:03:31.698074+00:00,False,3,3,0,55377,open,unknown,unknown,0.245,timeout,,0,False,
