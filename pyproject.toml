@@ -29,7 +29,7 @@ classifiers = [
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["coverage[toml]>=7.6,<8", "ruff>=0.9,<1", "mypy>=1.14,<2", "build>=1.2,<2"]
+dev = ["coverage[toml]>=7.6,<8", "ruff>=0.9,<1", "mypy>=1.14,<3", "build>=1.2,<2"]
 
 [project.scripts]
 port-scanner = "port_scanner.cli:main"
